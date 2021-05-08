@@ -1,6 +1,6 @@
 # SpringBoot-MultiDb-ConditionalOnProperty
 
-## @ConditionalOnProperty(prefix = "app.database", name = "type", havingValue = "NOSQL")
+## @ConditionalOnProperty(prefix = "app.database", name = "type", havingValue = "SQL", matchIfMissing = true)
 ~~~
 curl --location --request POST 'http://localhost:8080/users' \
 --header 'Content-Type: application/json' \
